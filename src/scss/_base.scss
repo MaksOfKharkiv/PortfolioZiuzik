@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ::-webkit-input-placeholder {
+//     text-transform: uppercase;
+// }
+// ::-moz-placeholder {
+//     text-transform: uppercase;
+// }
+// :-ms-input-placeholder {
+//     text-transform: uppercase;
+// }
+// ::-ms-input-placeholder {
+//     text-transform: uppercase;
+// }
+// ::placeholder {
+//     text-transform: uppercase;
+// }
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font: 400 16px/1.75 $roboto;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+input {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
