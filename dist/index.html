@@ -1,51 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <title>Portfolio Ziuzik M. V.</title>
-<link href="css/style.css" rel="stylesheet"></head>
-<body>
-<div class="wrapper">
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="container flex">
-                <span class="header__logo">
-                    <img src="images/logo.png" alt="MZ">
-                </span>
-                <nav class="header__navigation--inline flex">
-                    <a href="#">Section 1</a>
-                    <a href="#">Section 2</a>
-                    <a href="#">Section 3</a>
-                    <a href="#">Section 4</a>
-                    <a href="#">Section 5</a>
-                </nav>
-                <div class="header__navigation">
-                    <span class="header__navigation-button">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-                    </span>
-                    <ul class="header__navigation-menu">
-                        <li>
-                            <a href="#">Section 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Section 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Section 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Section 4</a>
-                        </li>
-                        <li>
-                            <a href="#">Section 5</a>
-                        </li>
-                    </ul>
-                </div>
+  <body>
+    <div class="wrapper">
+      <header class="header" style="background-image: url('./images/inline/header.jpg');">
+        <div class="header__wrapper">
+          <div class="container flex">
+            <span class="header__logo flex">
+              <img src="images/logo.png" alt="MZ" />
+            </span>
+            <nav class="header__navigation--inline flex">
+              <a href="#">Section 1</a>
+              <a href="#">Section 2</a>
+              <a href="#">Section 3</a>
+              <a href="#">Section 4</a>
+              <a href="#">Section 5</a>
+            </nav>
+            <div class="header__navigation">
+              <span class="header__navigation-button"> </span>
+              <ul class="header__navigation-menu">
+                <li>
+                  <a href="#">Section 1</a>
+                </li>
+                <li>
+                  <a href="#">Section 2</a>
+                </li>
+                <li>
+                  <a href="#">Section 3</a>
+                </li>
+                <li>
+                  <a href="#">Section 4</a>
+                </li>
+                <li>
+                  <a href="#">Section 5</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </header>
-</div>
-<script type="text/javascript" src="js/main.min.js"></script></body>
+        <div class="header__title">
+          <div class="header__title-name">
+            <h3>Maksym Ziuzik</h3>
+          </div>
+          <div class="header__title-description">
+            <p>Junior Frontend Developer</p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section id="skills" class="skills">
+          <div class="container">
+            <div class="section-title">
+              <h4>My Working Skills</h4>
+            </div>
+            <div class="row flex">
+              <div class="skills__box html">
+                <div class="skills__box-image box-image">
+                  <img src="images/html.png" alt="html icon" />
+                </div>
+                <div class="skills__box-title box-title">
+                  <p>html</p>
+                </div>
+              </div>
+              <div class="skills__box css">
+                <div class="skills__box-image box-image">
+                  <img src="images/css.png" alt="css icon" />
+                </div>
+                <div class="skills__box-title box-title">
+                  <p>css</p>
+                </div>
+              </div>
+              <div class="skills__box webpack">
+                <div class="skills__box-image box-image">
+                  <img src="images/webpack.png" alt="webpack icon" />
+                </div>
+                <div class="skills__box-title box-title">
+                  <p>webpack</p>
+                </div>
+              </div>
+              <div class="skills__box scss">
+                <div class="skills__box-image box-image">
+                  <img src="images/scss.png" alt="scss icon" />
+                </div>
+                <div class="skills__box-title box-title">
+                  <p>scss</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="info" class="info"></section>
+        <section id="works" class="works"></section>
+        <section id="contact" class="contact"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script type="text/javascript" src="js/main.min.js"></script>
+  </body>
 </html>
