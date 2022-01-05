@@ -15,9 +15,9 @@
                     <img src="./images/logo.png" alt="MZ">
                 </span>
                 <nav class="header__navigation--inline flex">
-                    <a href="#">Section 1</a>
-                    <a href="#">Section 2</a>
-                    <a href="#">Section 3</a>
+                    <a href="#skills">My Working Skills</a>
+                    <a href="#education">Education & Work Experience</a>
+                    <a href="#works">My Latest Works</a>
                     <a href="#">Section 4</a>
                     <a href="#">Section 5</a>
                 </nav>
@@ -27,13 +27,13 @@
                     </span>
                     <ul class="header__navigation-menu">
                         <li>
-                            <a href="#">Section 1</a>
+                            <a href="#skills">My Working Skills</a>
                         </li>
                         <li>
-                            <a href="#">Section 2</a>
+                            <a href="#education">Education & Work Experience</a>
                         </li>
                         <li>
-                            <a href="#">Section 3</a>
+                            <a href="#works">My Latest Works</a>
                         </li>
                         <li>
                             <a href="#">Section 4</a>
@@ -85,22 +85,113 @@
                             <p>webpack</p>
                         </div>
                     </div>
-                    <div class="skills__box scss">
+                    <div class="skills__box git">
                         <div class="skills__box-image box-image">
-                            <img src="./images/scss.png" alt="scss icon">
+                            <img src="./images/git.png" alt="git icon">
                         </div>
                         <div class="skills__box-title box-title">
-                            <p>scss</p>
+                            <p>git</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="info" class="info">
-
+        <section id="education" class="education" style="background-image: url('./images/inline/education.jpg');">
+            <div class="container">
+                <div class="section-title">
+                    <h4 class="text-white">Education & Work Experience</h4>
+                </div>
+                <div class="row flex">
+                    <div class="col-50">
+                        <div class="education__col">
+                            <div class="education__title">
+                                <h4>Work Experience</h4>
+                            </div>
+                            <div class="education__box">
+                                <div class="education__box-title">
+                                    <h4>Production Enterprise <span class="uppercase">metalokomplekt llc</span></h4>
+                                </div>
+                                <div class="education__box-date">
+                                    <h5><span class="uppercase">dec 2016</span> - nowadays</h5>
+                                </div>
+                                <div class="education__box-text">
+                                    <p>Design engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="education__col">
+                            <div class="education__title">
+                                <h4>Education</h4>
+                            </div>
+                            <div class="education__box">
+                                <div class="education__box-title">
+                                    <h4>Ukrainian Engineering Pedagogics Academy</h4>
+                                </div>
+                                <div class="education__box-date">
+                                    <h5><span class="uppercase">sep 2011</span> - jun 2015</h5>
+                                </div>
+                                <div class="education__box-text">
+                                    <p>Bachelor's degree in the Field of study "Professional training (Machine Engineering)"</p>
+                                </div>
+                            </div>
+                            <div class="education__box">
+                                <div class="education__box-title">
+                                    <h4>Ukrainian Engineering Pedagogics Academy</h4>
+                                </div>
+                                <div class="education__box-date">
+                                    <h5><span class="uppercase">sep 2015</span> - jun 2016</h5>
+                                </div>
+                                <div class="education__box-text">
+                                    <p>Specialist's degree in the speciality "Professional training. Machinebuilding"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="works" class="works">
-
+            <div class="container">
+                <div class="section-title">
+                    <h4>My Latest Works</h4>
+                </div>
+                <div class="works__slider">
+                    <div class="works__slider-container">
+                        <div class="works__slider-left">
+                                <div class="works__slider-leftbox bicycle">
+                                        <h4>Bicycle</h4>
+                                        <div class="works__socials">
+                                            <a href="https://github.com/MaksOfKharkiv/Bicycle" target="_blank"><img src="./images/github.png" alt="github repository"></a>
+                                            <a href="https://maksofkharkiv.github.io/Bicycle/" class="web" target="_blank"><img src="./images/web.png" alt="web"></a>
+                                        </div>
+                                </div>
+                                <div class="works__slider-leftbox startup">
+                                        <h4>Startup</h4>
+                                        <div class="works__socials">
+                                            <a href="https://github.com/MaksOfKharkiv/Startup" target="_blank"><img src="./images/github.png" alt="github repository"></a>
+                                            <a href="https://maksofkharkiv.github.io/Startup/" class="web" target="_blank"><img src="./images/web.png" alt="web"></a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="works__slider-right">
+                            <div class="works__slider-rightbox" style="background-image: url('./images/inline/startup.jpg');">
+                            </div>
+                            <div class="works__slider-rightbox" style="background-image: url('./images/inline/bicycle.jpg');">
+                            </div>
+                        </div>
+                        <div class="works__slider-buttons">
+                                <button class="works__slider-downbutton">
+                                    <img src="./images/arrow-down.png" alt="Arrow">
+                                </button>
+                                <button class="works__slider-upbutton">
+                                    <img src="./images/arrow-up.png" alt="Arrow">
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contact">
 

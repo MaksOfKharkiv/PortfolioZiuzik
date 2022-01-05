@@ -1,0 +1,78 @@
+.education {
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: inset 0 0 0 200vw rgba($darkblue,.45);
+
+    .col-50 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col {
+        width: 98%;
+        border-radius: 5px;
+        background: rgba($white, .1);
+        backdrop-filter: blur(12px);
+        padding: 60px 45px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        font: 700 26px/1.077 $raleway;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        color: $white;
+        padding: 20px 0;
+        position: relative;
+
+        &:after {
+            content: '';
+            background: rgba(255, 255, 255, .2);
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            
+            &:after {
+                content: none;
+            }
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        &-date {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        &-text {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.Shape_1 {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
+    position: absolute;
+    left: 849px;
+    top: 2826px;
+    width: 496px;
+    height: 2px;
+    z-index: 111;
+  }
+  
