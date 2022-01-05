@@ -6,10 +6,6 @@ $('.header__navigation-button').on('click', function() {
     $('body').toggleClass('no-scroll');
 })
 
-$(document).ready(function (){
-
-})
-
 //Sticky
 $(window).scroll(function(){
     const bannerHeight = $('.header').outerHeight();
@@ -18,5 +14,39 @@ $(window).scroll(function(){
     }
     else {
         $('.header__wrapper').removeClass('sticky');
+    }
+})
+
+// Works Slider
+$(document).ready(function () {
+    const sliderContainer = document.querySelector('.works__slider-container');
+    const slideRight = document.querySelector('.works__slider-right');
+    const slideLeft = document.querySelector('.works__slider-left');
+    const upButton = document.querySelector('.works__slider-upbutton');
+    const downButton = document.querySelector('.works__slider-downbutton');
+    const slidesLength = slideRight.querySelectorAll('div').length;
+    
+    let activeSlideIndex = 0;
+    
+    slideLeft.style.top = `-${(slidesLength - 1) * 80}vh`;
+    
+    upButton.addEventListener('click', () => changeSlide('up'));
+    downButton.addEventListener('click', () => changeSlide('down'));
+    
+    const changeSlide = (direction) => {
+        const sliderHeight = sliderContainer.clientHeight;
+        if(direction === 'up') {
+            activeSlideIndex++;
+            if(activeSlideIndex > slidesLength - 1) {
+                activeSlideIndex = 0;
+            }
+        } else if (direction === 'down') {
+            activeSlideIndex--;
+            if(activeSlideIndex < 0) {
+                activeSlideIndex = slidesLength - 1;
+            }
+        }
+        slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`;
+        slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`;
     }
 })
