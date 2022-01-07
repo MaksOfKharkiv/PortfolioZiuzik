@@ -52,7 +52,7 @@ $(document).ready(function () {
 })
 
 //Anchor links
-$('a').on('click', function (e) {
+$('.anchor').on('click', function (e) {
     e.preventDefault();
     const hh = $('.header').outerHeight();
     if(this.hash !== '') {
