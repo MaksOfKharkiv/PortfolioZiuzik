@@ -60,6 +60,8 @@
         </section>
         <section id="skills" class="skills">
             <div class="container">
+                <div class="skills__photo" style="background-image: url('./images/inline/photo.jpg');">
+                </div>
                 <div class="section-title">
                     <h4>My Working Skills</h4>
                 </div>
@@ -207,11 +209,14 @@
                             <div class="col-50__title">
                                 <h4>Leave a message</h4>
                             </div>
-                            <input type="text" name="Name" class="contacts__form-item" placeholder="Your Name" required>
-                            <input type="email" name="Email" class="contacts__form-item" placeholder="Your E-Mail" required>
-                            <input type="text" name="Subject" class="contacts__form-item" placeholder="Your Subject" required>
-                            <textarea name="Message" class="contacts__form-item" placeholder="Write Your Message" required></textarea>
-                            <div>
+                            <input type="text" name="Name" class="contacts__form-item" placeholder="Your Name*" required>
+                            <input type="email" name="Email" class="contacts__form-item" placeholder="Your E-Mail*" required>
+                            <input type="text" name="Subject" class="contacts__form-item" placeholder="Your Subject*" required>
+                            <textarea name="Message" class="contacts__form-item" placeholder="Write Your Message*" required></textarea>
+                            <div class="contacts__form-bottom">
+                                <div class="text-white">
+                                    <p>* Required</p>
+                                </div>
                                 <input type="submit" class="contacts__form-button contacts__form-item" value="Hire Me!">
                             </div>
                         </form>

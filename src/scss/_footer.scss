@@ -2,6 +2,10 @@
     background: #222;
     padding: 60px 0;
 
+    @include screen (768) {
+        padding: 15px 0;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
