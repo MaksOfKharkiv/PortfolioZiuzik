@@ -28,7 +28,7 @@ $(document).ready(function () {
     
     let activeSlideIndex = 0;
     
-    slideLeft.style.top = `-${(slidesLength - 1) * 80}vh`;
+    slideLeft.style.top = `-${(slidesLength - 1) * 70}vh`;
     
     upButton.addEventListener('click', () => changeSlide('up'));
     downButton.addEventListener('click', () => changeSlide('down'));
