@@ -25,10 +25,12 @@ $(document).ready(function () {
     const upButton = document.querySelector('.works__slider-upbutton');
     const downButton = document.querySelector('.works__slider-downbutton');
     const slidesLength = slideRight.querySelectorAll('div').length;
-    
+
+    let sliderMain = document.querySelector('.works__slider');
+    let sliderHeight = sliderMain.computedStyleMap().get('height');
     let activeSlideIndex = 0;
-    
-    slideLeft.style.top = `-${(slidesLength - 1) * 70}vh`;
+
+    slideLeft.style.top = `-${(slidesLength - 1) * parseInt(sliderHeight, 10)}px`;
     
     upButton.addEventListener('click', () => changeSlide('up'));
     downButton.addEventListener('click', () => changeSlide('down'));

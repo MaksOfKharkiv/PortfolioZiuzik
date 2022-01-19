@@ -1,7 +1,12 @@
 .education {
-    background-size: cover;
-    background-position: 50% 50%;
-    box-shadow: inset 0 0 0 200vw rgba($darkblue,.45);
+
+    &:before {
+        background-image: url('../images/education.jpg');
+        box-shadow: inset 0 0 0 200vw rgba($darkblue,.45);
+        background-attachment: fixed;
+        z-index: -2;
+        @extend .section__before;
+    }
 
     &__box {
         color: $white;
