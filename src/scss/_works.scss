@@ -1,6 +1,39 @@
 .works {
     background: $grey;
 
+    .community {
+        background: #425948;
+        position: relative;
+
+        @include screen (650) {
+            background: transparent;
+            background-image: url(../images/inline/community.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            color: #425948;
+
+            &:after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: #425948;
+                opacity: .2;
+            }
+        }
+
+        &__right {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: #425948;
+                opacity: .2;
+            } 
+        }
+    }
+
     .bitcoin {
         background: #0f132d;
         
